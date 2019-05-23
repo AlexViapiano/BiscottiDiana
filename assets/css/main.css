@@ -1451,7 +1451,7 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		-webkit-user-select: none;
-		background: #d7cd3f;
+		background: #f4ec7d;
 		bottom: -1em;
 		height: 5em;
 		left: 0;
@@ -2043,13 +2043,15 @@ input, select, textarea {
 .hide-on-small-screen {
 	display: show;
 }
-
 @media screen and (max-width: 600px) {
-
 	.hide-on-medium-screen {
 		display: none;
 	}
-
+}
+@media screen and (max-width: 600px) {
+	.hide-on-small-screen {
+		display: none;
+	}
 }
 
 .call-button {
