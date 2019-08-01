@@ -1124,7 +1124,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 550px) {
 
 			.panel > .inner.split {
 				-moz-flex-direction: column;
@@ -2083,4 +2083,15 @@ input, select, textarea {
 
 .white {
 	color: #ffffff !important;
+}
+
+.menu-image {
+	border-radius: 25px; 
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 550px) {
+	.menu-image {
+		margin-left: 0px !important;
+	}
 }
