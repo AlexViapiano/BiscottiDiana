@@ -1534,6 +1534,10 @@ input, select, textarea {
 							background-color: #242629;
 							color: #FFF;
 						}
+						
+						#header nav > ul > li a.active.icon:before {
+							color: #f4ec7d;
+						}
 
 	@media screen and (max-width: 736px) {
 
@@ -1570,13 +1574,16 @@ input, select, textarea {
 
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 600px) {
 		#header nav {
 			padding: 0 0.5em;
 		}
 		#header nav > ul > li a {
 			font-size: 0.9em;
 			padding: 0 1em;
+		}
+		#header nav > ul > li a.icon:before {
+			margin-left: 0em;
 		}
 	}
 
