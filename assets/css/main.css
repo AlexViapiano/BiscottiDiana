@@ -2118,3 +2118,5 @@ input, select, textarea {
 		margin-left: 0px !important;
 	}
 }
+
+a { border: none!important; } 
