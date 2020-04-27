@@ -16,6 +16,32 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					xfbml            : true,
+					version          : 'v6.0'
+				});
+			};
+
+			(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+			attribution=install_email
+			page_id="285951782060587"
+			theme_color="#f4ec7d">
+		</div>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -25,7 +51,7 @@
 							<a href="https://www.facebook.com/biscottidiana/" class="icon fa-facebook hide-on-small-screen" style="margin-left: 10px; color: #000; font-size: 1.3em;"><span class="label">Facebook</span></a>
 							<a href="https://www.instagram.com/biscottidiana/" class="icon fa-instagram hide-on-small-screen" style="margin-left: 10px; color: #000; font-size: 1.3em; padding-left: 10px;"><span class="label">Instagram</span></a>
 							<nav>
-								<ul>
+								<ul style="padding-right: 65px;">
 									<li><a href="#story" class="icon fa-user">Mon Histoire</a></li>
 									<li><a href="#menu" class="icon fa-list-alt">Menu</a></li>
 									<li><a href="#faq" class="icon fa-question-circle">FAQ</a></li>
@@ -206,11 +232,31 @@
 							<table> 
 								<tr> 
 									<td><a href="#menu1" style="color: #FFF">Biscotti Macchiato</a></td>
-									<td><span style="white-space: nowrap;">$30 par ½ kg</span> <span style="white-space: nowrap;">(10 à 12 unités)</span></td> 
+									<td><span style="white-space: nowrap;">$32 par ½ kg</span> <span style="white-space: nowrap;">(10 à 12 unités)</span></td> 
 								</tr> 
 								<tr> 
 									<td><a href="#menu7" style="color: #FFF">Biscotti citron pistache</a></td> 
 									<td>32$ par ½ kg (10 à 12 unités)</td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu12" style="color: #FFF">Nocciola (Hazelnut)</a></td> 
+									<td>$32 for ½ kg (10 to 12 units)</td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu13" style="color: #FFF">Almond Orange Cranberry Biscotti</a></td> 
+									<td>$32 for ½ kg (10 to 12 units)</td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu14" style="color: #FFF">Apple Walnut Maple Biscotti</a></td> 
+									<td>$32 for ½ kg (10 to 12 units)</td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu15" style="color: #FFF">Amaretti</a></td> 
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu16" style="color: #FFF">Baci di Dama</a></td> 
+									<td></td> 
 								</tr> 
 								<tr> 
 									<td><a href="#menu2" style="color: #FFF">Biscuit aux pépites de chocolat</a></td> 
@@ -233,7 +279,7 @@
 									<td>5$ l’unité</td> 
 								</tr> 
 								<tr> 
-									<td><a href="#menu8" style="color: #FFF">Gâteau « Baci »</a></td> 
+									<td><a href="#menu8" style="color: #FFF">Gâteaux</a></td> 
 									<td>40$</td> 
 								</tr> 
 								<tr> 
@@ -248,10 +294,55 @@
 									<td><a href="#menu11" style="color: #FFF">Pain romarin et olive</a></td> 
 									<td>24$</td> 
 								</tr> 
-								<!-- <tr> 
-									<td><a href="#menu12" style="color: #FFF">Lemon Tart with Mascarpone Frosting</a></td> 
-									<td>30$</td> 
-								</tr>  -->
+								<tr> 
+									<td><a href="#menu17" style="color: #FFF">Toast</a></td> 
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu18" style="color: #FFF">Tortellini</a></td> 
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menu19" style="color: #FFF">Lucia Collection</a></td> 
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td><a href="#menuspecial" style="color: #FFF">Seasonal or Holiday Items</a></td> 
+									<td></td> 
+								</tr> 
+							</table>
+						</div>
+					</footer>
+
+					<footer id="menuspecial" class="panel">
+						<div class="menu">
+							<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Seasonal or Holiday Items</h2>
+							<table> 
+								<tr> 
+									<td>Torrone Bianco</td>
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td>Torrone Cioccolato</td>
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td>Pastiera di Riso Napoletana</td>
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td>Pigna di Pasqua</td>
+									<td></td> 
+								</tr> 
+
+								<tr> 
+									<td>Pumpkin Pecan Biscotti</td>
+									<td></td> 
+								</tr> 
+								<tr> 
+									<td>Biscotti Pera e gocce di Cioccolato (Pear Chocolate)</td> 
+									<td></td> 
+								</tr> 								
 							</table>
 						</div>
 					</footer>
@@ -261,6 +352,7 @@
 							<section>
 								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Biscotti Macchiato</h2>	
 								<p>Ce biscotti décadent présente des notes subtiles d'espresso et le chocolat est garni d'amandes croquantes. Croquant d’une double cuisson, rempli de tradition et fierté italiennes, ce biscotti promet de tenir et de ne pas tomber en morceaux. Une raison parfaite pour s'attarder autour d'un café.</p>
+								<p>Vegan alternative available upon request</p>
 							</section>
 							<section>
 								<img class="menu-image" src="images/menu/macchiato.jpg" alt="" />
@@ -309,7 +401,7 @@
 						<div class="inner split">
 							<section>
 								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Bombe végétalienne</h2>
-								<p>Une crème glacée végétalienne riche et crémeuse, servie entre une couche de chocolat fondu et une croûte de biscuit sucrée..</p>
+								<p>Une crème glacée végétalienne riche et crémeuse, servie entre une couche de chocolat fondu et une croûte de biscuit sucrée..</p>	
 							</section>
 							<section>
 								<img class="menu-image" src="images/menu/veganbomba.jpg" alt="" />
@@ -331,27 +423,63 @@
 
 					<footer id="menu7" class="panel">
 						<div class="inner split">
-							<!-- <section>
-								<h2>Lemon Pistachio Biscotti</h2>
-								<p>A rich and creamy vegan ice cream between two mouth watering chocolate chip cookies makes the perfect combo. This ice cream sandwich will leave you wanting more. A perfect dessert to enjoy alone or to share.</p>
-							</section> -->
-							<center>
 							<section>
-								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Biscotti citron pistache</h2>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Lemon Pistachio Biscotti</h2>
+								<p>This bestselling biscotti has won the hearts of many from all ages and nationalities.  A perfectly crisp biscotti with sweet notes of lemon and vanilla covered in a rich white chocolate and generous coating of vibrant pistachio nuts. You won’t stop at one!</p>
+							</section>
+							<section>
 								<img class="menu-image" src="images/menu/lemonpistacchio.jpg" alt="" />
 							</section>
-							</center>
 						</div>
 					</footer>
 
 					<footer id="menu8" class="panel">
 						<div class="inner split">
 							<section>
-								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Gâteau « Baci »</h2>
-								<p>Un gâteau au chocolat moelleux avec un glaçage velouté au chocolat et aux noisettes fait maison, garni de noisettes grillées hachées et de chocolat Baci. Vous ne croirez pas que c'est sans gluten!</p>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Cakes</h2>
+								<p>*Custom cakes with simple decor available upon request. Base cake prices begin at 35$ and vary based on size. Please inquire for more information.</p>
+							</section>
+						</div>
+						<div class="inner split">
+							<section>
+								<h2>Baci Cake</h2>
+								<p>A moist chocolate cake with a velvety homemade chocolate hazelnut frosting topped with chopped roasted hazelnuts and Baci chocolate. You won’t believe it’s gluten free!</p>
 							</section>
 							<section>
 								<img class="menu-image" src="images/menu/bacicake.jpg" alt="" />
+							</section>
+						</div>
+						<div class="inner split">
+							<section>
+								<h2>Lemon Mascarpone</h2>
+								<p>Soft moist layers of lemon sponge cake covered in a zesty and sweet mascarpone cream. You’ll surely go back for more than one slice.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/lemoncake.jpg" alt="" />
+							</section>
+						</div>
+						<div class="inner split">
+							<section>
+								<h2>Gluten Free & Dairy Free Tiramisu</h2>
+								<p>A very moist carrot cake packed with flavour, perfectly spiced with pecans and walnuts and combined with luscious layers of cream. This cake is available with dairy or non-dairy option with the signature “Biscotti Diana” vegan cream.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/tiramisu.jpg" alt="" />
+							</section>
+						</div>
+						<div class="inner split">
+							<section>
+								<h2>Carrot Cake</h2>
+								<p>A very moist carrot cake packed with flavour, perfectly spiced with pecans and walnuts and combined with luscious layers of cream. This cake is available with dairy or non-dairy option with the signature “Biscotti Diana” vegan cream.</p>
+							</section>
+							<!-- <section>
+								<img class="menu-image" src="images/menu/tiramisu.jpg" alt="" />
+							</section> -->
+						</div>
+						<div class="inner split">
+							<section>
+								<h2>Alternative Vegan Options</h2>
+								<p>Chocolate Raspberry, Chocolate Caramel</p>
 							</section>
 						</div>
 					</footer>
@@ -382,31 +510,147 @@
 	
 					<footer id="menu11" class="panel">
 						<div class="inner split">
-							<!-- <section>
-								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Rosemary Olive Bread</h2>
-								<p>A moist and hearty almond tart infused with natural lemon flavours combined with a rich and silky mascarpone cream frosting and topped with berries.</p>
-							</section> -->
-							<center>
 							<section>
 								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Rosemary Olive Bread</h2>
+								<p>A true artisanal bread bursting with rosemary aroma. Slicing through this bread, you hear the glorious crunch associated with only the finest of breads. A rustic, flavourful and versatile bead that can be eaten alone or enjoyed with grilled dishes, soups and more. You will be so immersed with this bread you will quickly forget that it’s gluten free.</p>
+								<p>Seasonal or other variations include: Onion, Radicchio, Walnut and Chocolate, “Bianco” (Plain) </p>
+							</section>
+							<section>
 								<img class="menu-image" src="images/menu/olivebread.jpg" alt="" />
 							</section>
-							</center>
+						</div>
+					</footer>
+
+					<footer id="menu12" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Nocciola (Hazelnut)</h2>
+								<p>The “nocciola” biscotti is a decadent combination of perfectly roasted hazelnuts and rich chocolate flavours that will leave a lasting impression. Available seasonally or for special occasions.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/hazelnut.jpg" alt="" />
+							</section>
 						</div>
 					</footer>
 	
-	
-					<!-- <footer id="whatsnew" class="panel">
+					<footer id="menu13" class="panel">
 						<div class="inner split">
 							<section>
-								<h2>What's New</h2>
-								<p>A rich and creamy vegan ice cream between two mouth watering chocolate chip cookies makes the perfect combo. This ice cream sandwich will leave you wanting more. A perfect dessert to enjoy alone or to share.</p>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Almond Orange Cranberry Biscotti</h2>
+								<p>This seasonal biscotti will have you anticipating the next bite as sweet notes of specialty Cara Cara oranges fill your mouth balanced with cranberries and hints of cinnamon, then coated with a velvety white chocolate and the delicate crunch of roasted almonds.</p>
 							</section>
 							<section>
-								<img class="menu-image" src="images/menu/icecream.jpg" alt="" />
+								<img class="menu-image" src="images/menu/almondorange.jpg" alt="" />
 							</section>
 						</div>
-					</footer> -->
+					</footer>
+
+					<footer id="menu14" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Apple Walnut Maple Biscotti</h2>
+								<p>A fall specialty biscotti made with seasonal apples, cinnamon and glazed with a maple white chocolate then dipped with chopped walnuts.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/bacicake.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
+
+					<footer id="menu15" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Amaretti</h2>
+								<p>“Heavenly” “Pillowy” These are just some of the words that have been used to describe these fluffy and delicate amaretti cookies with a hint of lemon that melt in your mouth.  Available with almonds or amarena cherries for special occasions/holidays.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/amaretti.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
+
+					<footer id="menu16" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Baci di Dama</h2>
+								<p>The “Biscotti Diana” version of this “lady’s kisses” cookie is an amaretti cookie filled with a rich layer of chocolate crunchy hazelnut cream and topped with a hazelnut.</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/bacididama.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
+
+					<footer id="menu17" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Toast</h2>
+								<p>This gluten free and vegan oat bread  is a perfect addition to your mornings.  Bite into this wonderful toast bread and you will hear that wonderful crisp sound and be amazed by the texture and flavour enhanced by your favourite toppings.</p>
+								<p>Seasonal variation: Cinnamon Raisin</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/toast.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
+
+	
+					<footer id="menu18" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Tortellini</h2>
+								<p>
+									These tortellini are part of the heart and soul of the Biscotti Diana repertoire of recipes. An attestation to  the passion and quality that Biscotti Diana offers.   
+									Beautifully handmade, they are made of a perfect blend of gluten free flours that offer structure and delicacy.   
+									Carefully filled with a soft and rich blend of high quality cheeses with delicate notes of sage.  
+									Perfect to have with various sauces or as a soup in a broth.
+									<br></br>
+									Seasonal variations: butternut and sage, pear and chestnut.
+									<br></br>									
+									Other pasta variations available for special occasions: fettuccine, tagliatelle, ravioli, gnocchi
+									<br></br>									
+									Pasta is available upon request and in limited quantities and dependent on production availability.
+								</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/tortellini.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
+
+					<footer id="menu19" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Lucia Collection</h2>
+								<p>
+									Everyone loves Lucy and everyone that has crossed her path knows and loves her signature cookies and culinary talents.  
+								</p>
+								<p>
+									Coming soon is a classic crescent cookie modified by “Lucia”, filled with a sugar and walnut paste and then wrapped in a beautiful pastry dough baked until golden.
+								</p>
+								<h3>Apricot Cookies</h3>
+								<p>
+									A divine cookie dough filled with a luscious apricot jam topped with almond slivers. 
+									A perfect accompaniment with your coffee or tea break and makes a wonderful addition to your brunch or luncheon events.   
+								</p>
+							</section>
+						</div>
+					</footer>
+
+					<footer id="menu21" class="panel">
+						<div class="inner split">
+							<section>
+								<h2><a href="#menu" class="icon fa-arrow-left" style="margin-right: 10px;"></a>Other </h2>
+								<p>
+									A divine cookie dough filled with a luscious apricot jam topped with almond slivers. 
+									A perfect accompaniment with your coffee or tea break and makes a wonderful addition to your brunch or luncheon events.   
+								</p>
+							</section>
+							<section>
+								<img class="menu-image" src="images/menu/bacicake.jpg" alt="" />
+							</section>
+						</div>
+					</footer>
 
 					<footer id="faq" class="panel">
 						<div class="inner split">
